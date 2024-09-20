@@ -39,7 +39,7 @@ function Header(props) {
   const handleScroll = () => {
     const doc = document.documentElement;
     const scroll = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-    const newFlagFixed = (scroll > 100);
+    const newFlagFixed = (scroll > 10);
     if (flagFixed !== newFlagFixed) {
       setFixed(newFlagFixed);
       flagFixed = newFlagFixed;
